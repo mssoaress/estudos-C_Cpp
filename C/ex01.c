@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
-{
+int main(void) {
     char letraNome = 'M';
     int idade = 18;
     float nota = 7.5f;

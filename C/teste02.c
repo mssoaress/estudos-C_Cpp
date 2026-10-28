@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
-{
+int main(void) {
     float a = 8.55;
 
     printf("1 casa %.1f\n", a);

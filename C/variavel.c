@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(void) {
     int idade = 15;
     
     printf("%d\n", idade);
