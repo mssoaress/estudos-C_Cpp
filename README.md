@@ -20,3 +20,35 @@
 # snprintf
 ## // Juntar todas as informacoes
     snprintf(endereco, sizeof(endereco), "%s, %d - %s", rua, numeroCasa, bairro);
+
+## Switch Case em C
+
+Estrutura de seleção usada para comparar uma variável de tipo inteiro (`int`, `char`, `enum`) contra múltiplos valores fixos.
+
+### Sintaxe Básica
+```c
+switch (expressao) {
+    case valor1:
+        // Código para valor1
+        break; // Interrompe e sai do switch
+    case valor2:
+        // Código para valor2
+        break;
+    default:
+        // Executado se nenhum caso for atendido
+        break;
+}
+
+## Estruturas Condicionais: `if`, `else if` e `else` em C
+
+Utilizadas para executar blocos de código com base no teste de condições lógicas (`verdadeiro` ou `falso`).
+
+### Sintaxe Básica
+```c
+if (condicao1) {
+    // Executado se condicao1 for verdadeira (diferente de 0)
+} else if (condicao2) {
+    // Executado se condicao1 for falsa e condicao2 for verdadeira
+} else {
+    // Executado se todas as condições anteriores forem falsas
+}

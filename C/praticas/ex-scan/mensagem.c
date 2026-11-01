@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(void) {
-    char nome [100];
+  char nome[100];
 
-    printf("Digite seu nome completo: ");
-    fgets(nome, sizeof(nome), stdin );
+  printf("Digite seu nome completo: ");
+  fgets(nome, sizeof(nome), stdin);
 
-    printf("olá %s", nome);
+  printf("olá %s", nome);
 
-    return 0;
+  return 0;
 }
