@@ -4,6 +4,7 @@
 ## int %d
 ## float %.numero de casas f %.1f
 ## %s para "strings"
+## %fl para double 
 
 ## fgets(variavel, sizeof(variavel), stdin ); guarda o input string do usuario
 ## scanf("%d", &variavel); para inputs int
