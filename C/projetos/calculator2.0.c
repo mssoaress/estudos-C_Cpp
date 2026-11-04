@@ -59,7 +59,7 @@ int main(void) {
       printf("qual o segundo numero?\n");
       scanf("%lf", &numero2);
       resultado = numero1 + numero2;
-      printf("RESULTADO = %.2f", resultado);
+      printf("RESULTADO = %.2f\n", resultado);
       historicoOperacoes[quantidadeOperacoes] = resultado;
       quantidadeOperacoes++;
     }
@@ -70,7 +70,7 @@ int main(void) {
       printf("qual o segundo numero?\n");
       scanf("%lf", &numero2);
       resultado = numero1 - numero2;
-      printf("RESULTADO: %2.f", resultado);
+      printf("RESULTADO: %2.f\n", resultado);
       historicoOperacoes[quantidadeOperacoes] = resultado;
       quantidadeOperacoes++;
     }
@@ -81,29 +81,79 @@ int main(void) {
       printf("qual o segundo numero?\n");
       scanf("%lf", &numero2);
       resultado = numero1 * numero2;
-      printf("RESULTADO: %.2f", resultado);
+      printf("RESULTADO: %.2f\n", resultado);
       historicoOperacoes[quantidadeOperacoes] = resultado;
       quantidadeOperacoes++;
     }
     if (operacao == 4) {
-      printf("===DIVISÃO===");
+      printf("===DIVISÃO===\n");
       printf("qual o primeiro numero?\n");
       scanf("%lf", &numero1);
       printf("qual o segundo numero?\n");
       scanf("%lf", &numero2);
       resultado = numero1 / numero2;
-      printf("RESULTADO: %.2f", resultado);
+      printf("RESULTADO: %.2f\n", resultado);
       historicoOperacoes[quantidadeOperacoes] = resultado;
       quantidadeOperacoes++;
-    } 
+    }
     if (operacao == 5) {
-      printf("===POTENCIAÇÃO===");
-      printf("digite o numero: %lf");
+      printf("===POTENCIAÇÃO===\n");
+      printf("digite o numero:\n");
       scanf("%lf", &numero1);
       resultado = numero1 * numero1;
-      printf("RESULTADO: %.2f", resultado);
+      printf("RESULTADO: %.2f\n", resultado);
       historicoOperacoes[quantidadeOperacoes] = resultado;
       quantidadeOperacoes++;
+    }
+    if (operacao == 6) {
+      printf("===RAIZ QUADRADA===\n");
+      printf("digite o numero:\n");
+      scanf("%lf", &numero1);
+      resultado = sqrt(numero1);
+      printf("RESULTADO: %.2f\n", resultado);
+      historicoOperacoes[quantidadeOperacoes] = resultado;
+      quantidadeOperacoes++;
+    }
+    if (operacao == 7) {
+      printf("===PORCENTAGEM===\n");
+      printf("digite o primeiro numero:\n");
+      scanf("%lf", &numero1);
+      printf("digite o segundo numero:\n");
+      scanf("%lf", &numero2);
+      resultado = (numero1 * numero2) / 100;
+      printf("RESULTADO: %.2f\n", resultado);
+      historicoOperacoes[quantidadeOperacoes] = resultado;
+      quantidadeOperacoes++;
+    }
+    if (operacao == 8) {
+      printf("===RESTO DA DIVISÃO===\n");
+      printf("digite o primeiro numero:\n");
+      scanf("%lf", &numero1);
+      printf("digite o segundo numero:\n");
+      scanf("%lf", &numero2);
+      if (numero2 == 0) {
+        printf("erro! não pode ser dividido por zero!\n");
+      }
+      resultado = fmod(numero1, numero2);
+      printf("RESULTADO: %.2f\n", resultado);
+      historicoOperacoes[quantidadeOperacoes] = resultado;
+      quantidadeOperacoes++;
+    }
+    if (operacao == 9) {
+      printf("===MÉDIA ARITIMÉTICA===\n");
+      printf("digite o primeiro numero:\n");
+      scanf("%lf", &numero1);
+      printf("digite o segundo numero:\n");
+      scanf("%lf", &numero2);
+      resultado = (numero1 + numero2) / 2;
+      printf("RESULTADO: %.2f\n", resultado);
+    }
+    if (operacao == 10) {
+      printf("===VALOR ABSOLUTO===\n");
+      printf("digite o numero:\n");
+      scanf("%lf", &numero1);
+      resultado = fabs(numero1);
+      printf("RESULTADO: %.2f", resultado);
     }
   }
 
